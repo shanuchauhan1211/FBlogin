@@ -5,7 +5,8 @@ import { FacebookLoginButton } from "react-social-login-buttons";
 function Login() {
   return (
     <>
-      <LoginSocialFacebook
+    <div>Login</div>
+      {/* <LoginSocialFacebook
         appId={"1028269232324163"}
         onResolve={(response) => {
           console.log(response);
@@ -15,7 +16,7 @@ function Login() {
         }}
       >
         <FacebookLoginButton />
-      </LoginSocialFacebook>
+      </LoginSocialFacebook> */}
 
       {/* <FacebookLoginButton/> */}
     </>
