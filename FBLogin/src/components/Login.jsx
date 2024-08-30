@@ -1,27 +1,25 @@
-import React from 'react';
+import React from "react";
 //import FacebookLoginButton from './components/FacebookLoginButton';
-import {LoginSocialFacebook} from 'reactjs-social-login'; 
-import { FacebookLoginButton } from 'react-social-login-buttons';
-function App() {
-  
-
+import { LoginSocialFacebook } from "reactjs-social-login";
+import { FacebookLoginButton } from "react-social-login-buttons";
+function Login() {
   return (
     <>
-   <LoginSocialFacebook
-   appId={"479546804987549"}
-   onResolve={(response)=>{
-    console.log(response);
-   }}
-   onReject={(error)=>{
-    console.log(error);
-   }}>
-    <FacebookLoginButton/>
-   </LoginSocialFacebook>
+      <LoginSocialFacebook
+        appId={"1028269232324163"}
+        onResolve={(response) => {
+          console.log(response);
+        }}
+        onReject={(error) => {
+          console.log(error);
+        }}
+      >
+        <FacebookLoginButton />
+      </LoginSocialFacebook>
 
-{/* <FacebookLoginButton/> */}
-
+      {/* <FacebookLoginButton/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default Login;
