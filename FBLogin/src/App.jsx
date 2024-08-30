@@ -1,12 +1,21 @@
-import React from 'react';
-
+import { BrowserRouter as  Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import { FacebookLoginButton } from "react-social-login-buttons";
+import Login from './components/Login';
 function App() {
   
 
   return (
     <>
-   <div className='bg-black h-[100px] w-full'>ghjkl;'</div>
-    </>
+<Login/>
+
+     <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        
+      </Routes>
+    </Router>
+  </>
   )
 }
 
